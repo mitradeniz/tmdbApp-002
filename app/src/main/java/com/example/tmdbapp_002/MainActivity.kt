@@ -1,8 +1,10 @@
 package com.example.tmdbapp_002
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.core.os.bundleOf
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.tmdbapp_002.databinding.ActivityMainBinding
@@ -13,6 +15,22 @@ class MainActivity : AppCompatActivity() {
     private var resultsItem = arrayListOf<ResultsItem>()
     private var myAdapter = MyAdapter(resultsItem) { tem ->
 
+        val bundle = Bundle()
+
+        val intent = Intent(this@MainActivity, FilmSpecsActivity::class.java)
+
+        bundle.putString("filmName", tem.title.toString())
+        bundle.putString("filmDate", tem.release_date.toString())
+        bundle.putString("filmScore", tem.vote_average.toString())
+        bundle.putString("filmLanguage", tem.original_language.toString())
+        bundle.putString("filmAbout", tem.overview.toString())
+        bundle.putString("path", tem.poster_path.toString())
+
+        intent.putExtras(bundle)
+
+        startActivity(intent)
+
+
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.recyclerView.adapter = myAdapter
         binding.recyclerView.layoutManager =
-            LinearLayoutManager(this@MainActivity, LinearLayoutManager.VERTICAL, false)
+            LinearLayoutManager(this@MainActivity, LinearLayoutManager.HORIZONTAL, false)
         var page = 1
         binding.buttonNuxt.setOnClickListener {
             page++

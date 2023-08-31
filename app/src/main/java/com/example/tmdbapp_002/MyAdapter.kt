@@ -31,8 +31,12 @@ class MyAdapter(val results: ArrayList<ResultsItem>, val callback: (ResultsItem)
             .placeholder(R.drawable.ic_launcher_background) // Yükleme sırasında gösterilecek varsayılan görsel
             .error(R.drawable.ic_launcher_background) // Hata durumunda gösterilecek varsayılan görsel
             .into(holder.binding.backDropPath)
+        holder.binding.textViewFilmName.text = resultsItem.title.toString()
+        holder.binding.backDropPath.setOnClickListener {
+            callback.invoke(resultsItem)
 
-        holder.binding.id.text = resultsItem.id.toString()
+        }
+/*        holder.binding.id.text = resultsItem.id.toString()
         holder.binding.textViewAdult.text = resultsItem.adult.toString()
         holder.binding.originalLanguage.text = resultsItem.original_language.toString()
         holder.binding.originalTitle.text = resultsItem.original_title.toString()
@@ -43,7 +47,7 @@ class MyAdapter(val results: ArrayList<ResultsItem>, val callback: (ResultsItem)
         holder.binding.title.text = resultsItem.title.toString()
         holder.binding.video.text = resultsItem.video.toString()
         holder.binding.voteAverage.text = resultsItem.vote_average.toString()
-        holder.binding.voteCount.text = resultsItem.vote_count.toString()
+        holder.binding.voteCount.text = resultsItem.vote_count.toString()*/
 
 
 

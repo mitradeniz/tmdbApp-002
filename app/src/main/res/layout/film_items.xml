@@ -2,21 +2,37 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
     <ImageView
+        android:layout_marginLeft="20dp"
         android:id="@+id/backDropPath"
         android:layout_width="170dp"
         android:layout_height="240dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="50dp"
         android:scaleType="fitXY"
         android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></ImageView>
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/textViewFilmName"
+        android:layout_width="169dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="TEST TEXT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--<LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
@@ -247,6 +263,6 @@
 
 
         </LinearLayout>
-    </LinearLayout>
+    </LinearLayout>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
