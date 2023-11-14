@@ -10,6 +10,8 @@ import com.example.tmdbapp_002.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.coroutines.launch
 
+
+
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private var resultsItem = arrayListOf<ResultsItem>()
@@ -25,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         bundle.putString("filmLanguage", tem.original_language.toString())
         bundle.putString("filmAbout", tem.overview.toString())
         bundle.putString("path", tem.poster_path.toString())
+
 
         intent.putExtras(bundle)
 
