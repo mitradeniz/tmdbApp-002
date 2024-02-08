@@ -1,0 +1,85 @@
+{
+        "totalPrice": "12.454,10",
+        "totalPriceCount": 2,
+        "list": [
+            {
+                "company": "Evim",
+                "installationNumber": "4012312871",
+                "contractAccountNumber": "1020193029",
+                "amount": "1.661,60",
+                "address": "İSTASYON MAH. MEDRESE SK. NO:6/9 MERKEZ TUZLA İSTANBUL"
+            },
+            {
+                "company": "İş Yerim",
+                "installationNumber": "4012310284",
+                "contractAccountNumber": "1020193029",
+                "amount": "4.661,60",
+                "address": "TATLISU MAH. ELALMIŞ CAD. NO:88 MERKEZ ÜMRANİYE İSTANBUL"
+            }
+        ],
+        "invoices": [
+            {
+                "installationNumber": "4012312871",
+                "documentNumber": "2M120231220",
+                "amount": "261,60",
+                "currency": "TRY",
+                "dueDate": "13/06/2022"
+            },
+            {
+                "installationNumber": "4012312871",
+                "documentNumber": "2M120231221",
+                "amount": "301,60",
+                "currency": "TRY",
+                "dueDate": "14/06/2022"
+            },
+            {
+                "installationNumber": "4012312871",
+                "documentNumber": "2M120231222",
+                "amount": "361,60",
+                "currency": "TRY",
+                "dueDate": "15/06/2022"
+            },
+            {
+                "installationNumber": "4012312871",
+                "documentNumber": "2M120231223",
+                "amount": "736,80",
+                "currency": "TRY",
+                "dueDate": "16/06/2022"
+            },
+            {
+                "installationNumber": "4012310284",
+                "documentNumber": "2M120231224",
+                "amount": "1736,80",
+                "currency": "TRY",
+                "dueDate": "17/06/2022"
+            },
+            {
+                "installationNumber": "4012310284",
+                "documentNumber": "2M120231225",
+                "amount": "936,80",
+                "currency": "TRY",
+                "dueDate": "18/06/2022"
+            },
+            {
+                "installationNumber": "4012310284",
+                "documentNumber": "2M120231226",
+                "amount": "1236,80",
+                "currency": "TRY",
+                "dueDate": "19/06/2022"
+            },
+            {
+                "installationNumber": "4012310284",
+                "documentNumber": "2M120231227",
+                "amount": "336,80",
+                "currency": "TRY",
+                "dueDate": "20/06/2022"
+            },
+            {
+                "installationNumber": "4012310284",
+                "documentNumber": "2M120231228",
+                "amount": "376,80",
+                "currency": "TRY",
+                "dueDate": "21/06/2022"
+            }
+        ]
+    }
