@@ -11,7 +11,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.coroutines.launch
 
 
-
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private var resultsItem = arrayListOf<ResultsItem>()
@@ -35,6 +34,7 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+    val intentSearchPage = Intent(this@MainActivity, SearchByNameFilmActivity::class.java)
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
